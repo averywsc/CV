@@ -275,7 +275,7 @@
     font-size:15.5px;
     margin-bottom:4px;
   }
-  .edu-detail{ font-size:13px; color:var(--dim); }
+  .edu-detail{ font-size:13px; color:var(--dim); line-height:1.7; }
 
   /* skills */
   .skill-filter{
@@ -436,54 +436,54 @@
     .hero-role{ font-size:10px; margin-bottom:6px; }
     .hero-contact{ gap:12px; font-size:10.5px; }
 
-    section{ padding:10px 0; break-inside:auto; }
-    .eyebrow{ font-size:8.5px; margin-bottom:3px; }
-    h2{ font-size:14px; margin-bottom:8px; }
+    section{ padding:7px 0; break-inside:auto; }
+    .eyebrow{ font-size:8px; margin-bottom:2px; }
+    h2{ font-size:13px; margin-bottom:6px; }
 
     .about-grid{ grid-template-columns:1fr; gap:8px; }
-    .about-text p{ font-size:10.5px; margin-bottom:0; }
-    .about-text p + p{ margin-top:4px; }
+    .about-text p{ font-size:10px; margin-bottom:0; }
+    .about-text p + p{ margin-top:3px; }
     .hero-photo{ display:none; }
 
-    .job{ padding:8px 10px; margin-bottom:5px; break-inside:avoid; }
+    .job{ padding:6px 9px; margin-bottom:4px; break-inside:avoid; }
     .job-head{ gap:8px; }
-    .job-role{ font-size:11.5px; }
-    .job-org{ font-size:9.5px; margin-top:0; }
-    .job-date{ font-size:9px; }
+    .job-role{ font-size:11px; }
+    .job-org{ font-size:9px; margin-top:0; }
+    .job-date{ font-size:8.5px; }
     .job-chevron{ display:none; }
-    .job-body{ max-height:none !important; margin-top:4px !important; padding-top:4px !important; font-size:9.5px; }
+    .job-body{ max-height:none !important; margin-top:3px !important; padding-top:3px !important; font-size:9px; }
 
-    .project-card{ padding:10px 12px; break-inside:avoid; }
-    .project-card p{ font-size:9.5px; margin-bottom:6px; }
+    .project-card{ padding:8px 10px; break-inside:avoid; }
+    .project-card p{ font-size:9px; margin-bottom:4px; }
     .project-links{ flex-direction:row; gap:16px; }
-    .project-links a{ font-size:9.5px; }
+    .project-links a{ font-size:9px; }
 
-    .edu-item{ grid-template-columns:110px 1fr; gap:8px; padding:6px 0; break-inside:avoid; }
-    .edu-date{ font-size:9px; }
-    .edu-school{ font-size:11px; margin-bottom:1px; }
-    .edu-detail{ font-size:9px; }
+    .edu-item{ grid-template-columns:105px 1fr; gap:8px; padding:5px 0; break-inside:avoid; }
+    .edu-date{ font-size:8.5px; }
+    .edu-school{ font-size:10.5px; margin-bottom:1px; }
+    .edu-detail{ font-size:8.5px; line-height:1.45; }
 
-    .cert-layout{ grid-template-columns:56px 1fr; gap:12px; }
-    .doe-card{ max-width:56px; }
-    .doe-photo{ margin-bottom:3px; }
-    .doe-title{ font-size:8px; }
-    .doe-sub{ font-size:7.5px; }
-    .cert-group-title{ font-size:8.5px; margin-bottom:4px; }
-    .cert-list ul{ gap:4px; }
-    .cert-list li{ font-size:9.5px; padding:5px 8px; break-inside:avoid; }
+    .cert-layout{ grid-template-columns:50px 1fr; gap:10px; }
+    .doe-card{ max-width:50px; }
+    .doe-photo{ margin-bottom:2px; }
+    .doe-title{ font-size:7.5px; }
+    .doe-sub{ font-size:7px; }
+    .cert-group-title{ font-size:8px; margin-bottom:3px; }
+    .cert-list ul{ gap:3px; }
+    .cert-list li{ font-size:9px; padding:4px 7px; break-inside:avoid; }
 
-    .skill-tags{ gap:5px; }
-    .skill-tag{ font-size:9.5px; padding:4px 9px; }
+    .skill-tags{ gap:4px; }
+    .skill-tag{ font-size:9px; padding:3px 8px; }
     .skill-tag.hidden{ display:inline-block !important; }
 
     .ref-grid{ grid-template-columns:repeat(3, 1fr); gap:8px; }
-    .ref-card{ padding:8px 10px; break-inside:avoid; }
-    .ref-name{ font-size:10.5px; }
-    .ref-role{ font-size:9px; margin-bottom:0; }
-    .ref-note{ font-size:8.5px; margin-top:6px; }
+    .ref-card{ padding:6px 9px; break-inside:avoid; }
+    .ref-name{ font-size:10px; }
+    .ref-role{ font-size:8.5px; margin-bottom:0; }
+    .ref-note{ font-size:8px; margin-top:5px; }
 
-    footer{ padding:10px 0 0; }
-    .footer-note{ font-size:8.5px; }
+    footer{ padding:8px 0 0; }
+    .footer-note{ font-size:8px; }
   }
 
   @media (prefers-reduced-motion: reduce){ *{ transition:none !important; scroll-behavior:auto !important; } }
@@ -499,6 +499,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#volunteer">Volunteer</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
@@ -540,6 +541,12 @@
     <div class="eyebrow">Experience</div>
     <h2>Work history</h2>
     <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="volunteer">
+    <div class="eyebrow">Volunteer</div>
+    <h2>Giving back</h2>
+    <div class="timeline" id="volunteerTimeline"></div>
   </section>
 
   <section id="projects">
@@ -652,27 +659,54 @@
     },
   ];
 
-  const timeline = document.getElementById('timeline');
-  JOBS.forEach((job, i)=>{
-    const el = document.createElement('div');
-    el.className = 'job';
-    el.innerHTML = `
-      <div class="job-head">
-        <div class="job-title-wrap">
-          <div class="job-role">${job.role} <span class="job-chevron">›</span></div>
-          <div class="job-org">${job.org}</div>
+  function renderTimeline(list, containerId){
+    const container = document.getElementById(containerId);
+    list.forEach((job)=>{
+      const el = document.createElement('div');
+      el.className = 'job';
+      el.innerHTML = `
+        <div class="job-head">
+          <div class="job-title-wrap">
+            <div class="job-role">${job.role} <span class="job-chevron">›</span></div>
+            <div class="job-org">${job.org}</div>
+          </div>
+          <div class="job-date">${job.date}</div>
         </div>
-        <div class="job-date">${job.date}</div>
-      </div>
-      <div class="job-body"><p>${job.body}</p></div>
-    `;
-    el.addEventListener('click', ()=> el.classList.toggle('open'));
-    timeline.appendChild(el);
-  });
-  timeline.firstChild.classList.add('open');
+        <div class="job-body"><p>${job.body}</p></div>
+      `;
+      el.addEventListener('click', ()=> el.classList.toggle('open'));
+      container.appendChild(el);
+    });
+    if(container.firstChild) container.firstChild.classList.add('open');
+  }
+
+  renderTimeline(JOBS, 'timeline');
+
+  const VOLUNTEER = [
+    {
+      role:'Community Clean-Up Organiser',
+      org:'Keep NZ Beautiful',
+      date:'2025',
+      body:'Organised and led monthly park and beach clean-ups with a group of volunteers, coordinating litter collection and supporting local environmental efforts.'
+    },
+    {
+      role:'Marking & Resource Support',
+      org:'Bayfield Primary School',
+      date:'2024 — 2025',
+      body:'Two years of weekly volunteer service, marking students\' work and organising school resources to support teachers and classroom running.'
+    },
+    {
+      role:'Surf Life Saving Club Volunteer',
+      org:'SLSNZ — Pauanui Surf Life-Saving Club',
+      date:'2016 — present',
+      body:'Regular volunteer shifts supporting the club, plus door-knock street appeals to raise money for surf lifesaving services.'
+    },
+  ];
+
+  renderTimeline(VOLUNTEER, 'volunteerTimeline');
 
   const EDU = [
-    { school:'Western Springs College', date:'2023 — present', detail:'Awards: All-round excellence in year 11 Science, 2025. Highly dedicated in year 11 Media Studies, 2025. 2025 Best and Fairest Player, Senior Boys Tennis. Exceptional application in year 9 French, 2023. Significant progress in year 9 Media Studies, 2023.' },
+    { school:'Western Springs College', date:'2023 — present', detail:'<strong>Leadership roles:</strong> Digiwise Club Leader, Film Club Leader.<br><strong>Qualification:</strong> NCEA Level 2 completed.<br><strong>Awards:</strong> All-round excellence in year 11 Science, 2025; Highly dedicated in year 11 Media Studies, 2025; 2025 Best and Fairest Player, Senior Boys Tennis; Exceptional application in year 9 French, 2023; Significant progress in year 9 Media Studies, 2023.' },
     { school:'Ponsonby Intermediate', date:'2021 — 2022', detail:'School Service Award, Tech Leader, Positively Ponsonby rep. Represented the school in hockey, basketball, and football. Main cast member in the school production and main creator for the school yearbook.' },
     { school:'Bayfield Primary School', date:'2014 — 2020', detail:'School Ambassador, Time Capsule Leader, Bayfield Zoom website creator, Eco Warrior, basketball inner city team.' },
   ];
