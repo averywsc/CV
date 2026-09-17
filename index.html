@@ -230,6 +230,13 @@
   .job.open .job-body{ max-height:240px; margin-top:12px; padding-top:12px; border-top:1px dashed var(--line); }
 
   /* projects */
+  .project-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:8px;
+  }
+  .project-title:not(:first-of-type){ margin-top:18px; }
   .project-card{
     background:var(--panel);
     border:1px solid var(--line);
@@ -453,6 +460,8 @@
     .job-chevron{ display:none; }
     .job-body{ max-height:none !important; margin-top:3px !important; padding-top:3px !important; font-size:9px; }
 
+    .project-title{ font-size:11px; margin-bottom:4px; }
+    .project-title:not(:first-of-type){ margin-top:8px; }
     .project-card{ padding:8px 10px; break-inside:avoid; }
     .project-card p{ font-size:9px; margin-bottom:4px; }
     .project-links{ flex-direction:row; gap:16px; }
@@ -551,11 +560,21 @@
 
   <section id="projects">
     <div class="eyebrow">Projects</div>
-    <h2>Study Hub</h2>
+    <h2>What I've built</h2>
+
+    <div class="project-title">Study Hub</div>
     <div class="project-card">
       <p>A study resource site I built for Western Springs College students. It's now featured on the school's official Digital Study Tips site.</p>
       <div class="project-links">
         <a href="https://averywsc.github.io/Study.Hub/" target="_blank" rel="noopener">Study Hub site &rarr;</a>
+      </div>
+    </div>
+
+    <div class="project-title">Digital Citizens Aotearoa</div>
+    <div class="project-card">
+      <p>An interactive digital citizenship and technology portal I built for New Zealand students in Years 1 to 8. It covers computer basics, school apps, online safety, and social media and AI through quizzes and safe practice sandboxes, with a printable certificate once all modules are finished.</p>
+      <div class="project-links">
+        <a href="https://averywsc.github.io/primaryschooleducaiton/" target="_blank" rel="noopener">Digital Citizens Aotearoa site &rarr;</a>
       </div>
     </div>
   </section>
